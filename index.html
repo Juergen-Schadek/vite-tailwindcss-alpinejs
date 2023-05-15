@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./src/css/tailwind.css" />
   </head>
   <body>
+    <h1 class="font-handwritten text-3xl text-primary">Servus Welt!</h1>
+    <h2 class="text-xl text-secondary">Lorem ipsum dolor sit amet.</h2>
+    <p class="font-hugme text-xl text-red-900">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit,
+      dolore?
+    </p>
     <div x-data="{ open: false }">
       <button @click="open = ! open">Toggle</button>
       <div x-show="open" @click.outside="open = false">Contents...</div>
@@ -113,6 +120,7 @@
         </div>
       </div>
     </div>
+    <!-- Alpine.js -->
     <script type="module" src="./src/js/site.js"></script>
   </body>
 </html>
